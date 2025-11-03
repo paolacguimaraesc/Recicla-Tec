@@ -11,9 +11,6 @@ header {
   border: solid green 5px;
   height: 10vh;
 }
-header h1 {
-  background-color: red;
-}
 header nav {
-  background-color: aqua;
+  height: 10vh;
 }/*# sourceMappingURL=style.css.map */
