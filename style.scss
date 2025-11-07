@@ -3,17 +3,82 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 header {
     display: flex; // Por padrão os itens do container ficam um ao lado do outro
     // justify-content: space-between; Alinha o primeiro item no começo, o último no final e os outros separados igualmente
     justify-content: space-around;
     align-items: center;
+
     border: solid green 5px;
     height: 10vh;
-  
-    nav {
-        height: 10vh;
-        
 
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 35%;
+        height: 10vh;
+
+        a {
+            color: #4B5563;
+            text-decoration: none;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.botaoverde {
+    background-color: #21C05C;
+    padding: 20px;
+    border-radius:6px;
+    color: #FFFFFF;
+}
+
+  .caixalogo{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        border: solid;
+        width: 15%;
+        h1 {
+            color: #1F2937;
+            font-size: 2.5rem;
+        }
+        
+    }
+
+
+.produtosDisponiveis {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+
+
+    article {
+        border: solid #16a34a;
+        width: 18%;
+        height: 60vh;
+        display: flex;
+        // flex-direction: row; Por padrão ao aplicar o display flex, a direção é em linha (row)
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+            width: 100%;
+        }
+
+        p {
+            text-align: center;
+            border: solid;
+            width: 90%;
+        }
+
+        button {
+            margin-bottom: 2rem;
+            padding: 1rem;
+        }
     }
 }
